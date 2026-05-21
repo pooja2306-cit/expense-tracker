@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to right,
+    #141e30,
+    #243b55
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main App */
+
+.app {
+  width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px
+    rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+  color: #243b55;
+}
+
+/* Analytics Section */
+
+.analytics {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.analytics h2 {
+  margin: 10px 0;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+
+input,
+select,
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Buttons */
+
+button {
+  background: #243b55;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #141e30;
+}
+
+/* Expense Cards */
+
+.expense-item {
+  background: #f4f4f4;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.expense-item:hover {
+  transform: translateY(-3px);
+}
+
+.expense-item button {
+  background: crimson;
+  margin-top: 10px;
+}
+
+.expense-item button:hover {
+  background: darkred;
+}
+
+/* Income Input */
+
+.income-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Dark Mode */
+
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p {
+  color: white;
+}
+
+.dark .analytics {
+  background: #2c2c2c;
+}
+
+.dark .expense-item {
+  background: #333;
+}
+
+.dark input,
+.dark select {
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+.dark button {
+  background: #555;
+}
+
+.dark button:hover {
+  background: #777;
+}
+
+/* Dark Mode Button */
+
+.dark-btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.warning-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.warning-box h3 {
+  background: #ffe5e5;
+  color: crimson;
+  padding: 12px;
+  border-radius: 10px;
+}
